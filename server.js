@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://aaronm:scraper123@ds133262.mlab.com:33262/heroku_2fjddktb";
 
 mongoose.connect(MONGODB_URI, {
     useUnifiedTopology: true,
